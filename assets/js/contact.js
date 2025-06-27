@@ -1,6 +1,9 @@
 // contact.js
 document.addEventListener("DOMContentLoaded", function () {
-  emailjs.init('YOUR_PUBLIC_KEY'); // Replace with your EmailJS Public Key
+  const YOUR_SERVICE_ID = "service_16z6we9";
+  const YOUR_TEMPLATE_ID = "template_i3dgz7v";
+  const YOUR_PUBLIC_KEY = "thAvKbb0JP7ANYlbp";
+  emailjs.init(YOUR_PUBLIC_KEY); // Replace
 
   const form = document.getElementById("contact-form");
   const status = document.getElementById("form-status");
@@ -8,17 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    // if (!document.getElementById("privacyCheck").checked) {
-    //   status.textContent = "Please accept the privacy policy.";
-    //   status.style.color = "red";
-    //   return;
-    // }
-
     status.textContent = "Sending...";
     status.style.color = "#555";
 
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+      .sendForm(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, this)
       .then(() => {
         status.textContent = "Message sent successfully!";
         status.style.color = "green";
