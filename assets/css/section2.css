@@ -1,0 +1,117 @@
+.compare-section {
+    background-color: #f4f7fb;
+    padding: 80px 20px;
+    color: #234754;
+  }
+  
+  .compare-section .section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #234754;
+  }
+  
+  .compare-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .compare-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 420px;
+    transition: transform 0.3s;
+  }
+  
+  .compare-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .compare-icon {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .compare-icon img {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .compare-card h3 {
+    text-align: center;
+    color: #234754;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .compare-card ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .compare-card li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .compare-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .compare-card {
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 60px 20px 30px; /* extra top padding to accommodate icon */
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    text-align: center;
+  }
+
+  .compare-icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .compare-icon-alert {
+    background-color: #f0a751
+  }
+
+  .compare-icon-brain {
+    background-color: #9bc26e
+  }
+  
+  
+  .compare-icon img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+  }
+  

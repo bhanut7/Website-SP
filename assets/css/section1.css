@@ -1,0 +1,103 @@
+/* Section 1: Hero Section */
+.hero-section {
+    background: #234754;
+    color: white;
+    padding: 100px 20px;
+  }
+  
+  .hero-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  /* Make it wrap on smaller screens */
+  @media screen and (max-width: 768px) {
+    .hero-container {
+      flex-wrap: wrap;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-text, .hero-image {
+      width: 100%;
+    }
+  
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  
+  .hero-text {
+    flex: 1 1 50%;
+  }
+  
+  .hero-heading {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .hero-subheading {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+    opacity: 0.85;
+    color: white;
+  }
+  
+  .hero-cta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background-color: #f0a751;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #dd8e38;
+  }
+  
+  .btn-secondary {
+    display: inline-block;
+    background-color: transparent;
+    color: #f0a751;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 2px solid #f0a751;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #f0a751;
+    color: #234754; /* assuming this is your dark background */
+  }
+  
+  
+  /* Image Section */
+  .hero-image {
+    flex: 1 1 50%;
+    text-align: center;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+  
